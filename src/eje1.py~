@@ -5,7 +5,7 @@ import sys
 PI = 3.14159265358979323846264338327950288
 n = int(sys.argv[1])
 v = int(sys.argv[2])
-
+lista = []
 def g(n):
   if (n!=0):
     suma=0
@@ -19,5 +19,6 @@ def g(n):
     return pi
 for j in range (1, v+1):
   pi = g(j*n)
-  print pi
-    
+  lista = lista + [pi]
+print lista
+ 
